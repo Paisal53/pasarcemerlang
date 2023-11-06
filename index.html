@@ -103,7 +103,10 @@
 <footer class="py-3  bg-dark-subtle mt-auto">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="/pasarcemerlang/index.html" class="nav-link px-2 text-body-secondary">beranda</a></li>
-      <li class="nav-item"><a href="/pasarcemerlang/index.html" class="nav-link px-2 text-body-secondary">tentang</a></li>
+      <li class="nav-item"><a href="/pasarcemerlang/tentang.html" id="link-login-penjual" class="nav-link px-2 text-body-secondary">login penjual</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"></a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">menjadi penjual</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">tentang</a></li>
     </ul>
     <p class="text-center text-body-secondary">&copy; 2023 pasar cemerlang</p>
   </footer>
@@ -117,7 +120,7 @@ const app = initializeApp(konfigurasiFirabase pm)
  const auth =getAuth(); resto
  
  $(document). ready(function() {
-   $("#link-login-prnjual").click(function(){
+   $("#link-login-prnjual"),click(function(){
      signInWithPopup(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
